@@ -1,0 +1,27 @@
+{
+  "manifest_version": 3,
+  "name": "BnD Watch Party",
+  "version": "1.0",
+  "permissions": ["scripting", "storage"],
+  "host_permissions": [
+    "*://*.youtube.com/*",
+    "http://localhost:3000/*"
+  ],
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "content_scripts": [
+  {
+    "matches": [
+      "*://*.youtube.com/*",
+      "*://*.hbomax.com/*",
+      "*://*.max.com/*",
+      "*://*.netflix.com/*",
+      "*://*.disneyplus.com/*"
+    ],
+    "js": ["dist/content.js"],
+    "run_at": "document_idle",
+    "all_frames": true 
+  }
+]
+}

@@ -1,0 +1,15 @@
+{
+  "name": "watch-party-extension",
+  "version": "1.0.0",
+  "description": "Chrome extension for BnD Watch Party",
+  "scripts": {
+    "build": "esbuild content.js --bundle --format=iife --outfile=dist/content.js --watch",
+    "build:once": "esbuild content.js --bundle --format=iife --outfile=dist/content.js"
+  },
+  "devDependencies": {
+    "esbuild": "^0.24.0"
+  },
+  "dependencies": {
+    "socket.io-client": "^4.8.1"
+  }
+}

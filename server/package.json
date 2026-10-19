@@ -1,0 +1,17 @@
+{
+  "name": "watch-party-server",
+  "version": "1.0.0",
+  "description": "Socket.io relay server for BnD Watch Party",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.6",
+    "express": "^4.21.2",
+    "socket.io": "^4.8.1"
+  }
+}
